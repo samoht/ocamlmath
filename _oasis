@@ -1,0 +1,41 @@
+OASISFormat: 0.3
+Name:        ocamlmath
+Version:     0.4
+Synopsis:    Mathematic Library for OCaml
+Authors:     Stephane Grognet
+License:     LGPL-2.0 with OCaml linking exception
+Plugins:     META (0.3), DevFiles (0.3)
+BuildTools:  ocamlbuild
+
+Library math
+  Path: lib/
+  Findlibname: math
+  Modules: Util, Bary, Deg, Data, Hash, Sparse_vector, Sparse_tensor,
+           Sparse_matrix, Mat, Matrix, Fft, Readwrite, Infinitesimal,
+           Sci, Reduc, Data2
+  BuildDepends:	num, str
+
+Library graphicmath
+  Path: lib/
+  Findlibname: graphics
+  Findlibparent: math
+  Modules: Draw, Widget, Analogic, Spec
+  BuildDepends:	graphics, math
+
+Document math
+  Title:                MathSpec
+  Type:                 ocamlbuild (0.3)
+  BuildTools+:          ocamldoc
+  Install:		true
+  XOCamlbuildPath:      doc/
+  XOCamlbuildLibraries: math
+
+Document graphicmath
+  Title:                GraphicmathSpec
+  Type:                 ocamlbuild (0.3)
+  BuildTools+:          ocamldoc
+  Install:		true
+  XOCamlbuildPath:      lib/
+  XOCamlbuildLibraries: math.graphics
+
+# TODO: toplevel + executable

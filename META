@@ -1,0 +1,22 @@
+# OASIS_START
+# DO NOT EDIT (digest: 73e2964705eb82d15938f5dd2464a26c)
+version = "0.4"
+description = "Mathematic Library for OCaml"
+requires = "num str"
+archive(byte) = "math.cma"
+archive(byte, plugin) = "math.cma"
+archive(native) = "math.cmxa"
+archive(native, plugin) = "math.cmxs"
+exists_if = "math.cma"
+package "graphics" (
+ version = "0.4"
+ description = "Mathematic Library for OCaml"
+ requires = "graphics math"
+ archive(byte) = "graphicmath.cma"
+ archive(byte, plugin) = "graphicmath.cma"
+ archive(native) = "graphicmath.cmxa"
+ archive(native, plugin) = "graphicmath.cmxs"
+ exists_if = "graphicmath.cma"
+)
+# OASIS_STOP
+
