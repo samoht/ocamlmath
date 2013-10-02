@@ -1,0 +1,6 @@
+Big_int[.][A-Za-z]	nums.cma	nums.cmxa
+Ratio[.][A-Za-z]	nums.cma	nums.cmxa
+Num[.][A-Za-z]		nums.cma	nums.cmxa
+Str[.][A-Za-z]		str.cma		str.cmxa
+Graphics[.][A-Za-z]	graphics.cma	graphics.cmxa
+Unix[.][A-Za-z]		unix.cma	unix.cmxa

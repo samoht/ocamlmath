@@ -1,0 +1,3 @@
+opam-version:	"1"
+bin:		[ "opam_topmath.sh" { "mathtop" } "opam_topgraphicmath.sh" { "graphicmathtop" } ]
+
